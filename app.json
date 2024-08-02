@@ -8,23 +8,23 @@
         "pyrogram"
     ],
     "repository": "https://github.com/Mswpresents/txttovdomy",
-    "success_url": "https://t.me/teamjaishriramofficial",
+    "success_url": "https://t.me/adjrynarggbot",
     "stack": "container",
     "env": {
         "API_ID": {
-            "description": "𝑬𝒏𝒕𝒆𝒓 𝒀𝒐𝒖𝒓 𝑨𝒑𝒊 𝑰𝑫",
+            "description": "26924168",
             "required": true
         },
         "API_HASH": {
-            "description": "𝑬𝒏𝒕𝒆𝒓 𝒀𝒐𝒖𝒓 𝑨𝒑𝒊 𝑯𝒂𝒔𝒉",
+            "description": "b05041459456cb772f25175e88ffdc53",
             "required": true
         },
         "BOT_TOKEN": {
-            "description": "𝑬𝒏𝒕𝒆𝒓 𝒀𝒐𝒖𝒓 𝑩𝒐𝒕 𝑻𝒐𝒌𝒆𝒏",
+            "description": "7314398181:AAENfxCynPRqJ9WyVKN4otc_dv3u78hNCrw",
             "required": true
         },
         "OWNER_ID": {
-            "description": "𝑼𝒔𝒆𝒓 𝑰𝑫 𝑶𝒇 𝑩𝒐𝒕 𝑶𝒘𝒏𝒆𝒓",
+            "description": "7299627144",
             "required": true
         },
         "SUDO_USERS": {
