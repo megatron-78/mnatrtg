@@ -7,28 +7,20 @@
         "video-extract",
         "pyrogram"
     ],
-    "repository": "https://github.com/Mswpresents/txttovdomy",
-    "success_url": "https://t.me/adjrynarggbot",
+    "repository": "https://github.com/Lordraaama/mypersonal",
+    "success_url": "https://t.me/teamjaishriramofficial",
     "stack": "container",
     "env": {
         "API_ID": {
-            "description": "26924168",
+            "description": "𝑬𝒏𝒕𝒆𝒓 𝒀𝒐𝒖𝒓 𝑨𝒑𝒊 𝑰𝑫",
             "required": true
         },
         "API_HASH": {
-            "description": "b05041459456cb772f25175e88ffdc53",
+            "description": "𝑬𝒏𝒕𝒆𝒓 𝒀𝒐𝒖𝒓 𝑨𝒑𝒊 𝑯𝒂𝒔𝒉",
             "required": true
         },
         "BOT_TOKEN": {
-            "description": "7314398181:AAENfxCynPRqJ9WyVKN4otc_dv3u78hNCrw",
-            "required": true
-        },
-        "OWNER_ID": {
-            "description": "7299627144",
-            "required": true
-        },
-        "SUDO_USERS": {
-            "description": "6622333718",
+            "description": "𝑬𝒏𝒕𝒆𝒓 𝒀𝒐𝒖𝒓 𝑩𝒐𝒕 𝑻𝒐𝒌𝒆𝒏",
             "required": true
         }
     },
