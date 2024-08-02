@@ -24,7 +24,7 @@ def duration(filename):
         stdout=subprocess.PIPE,
         stderr=subprocess.STDOUT)
     return float(result.stdout)
-    
+
 def exec(cmd):
         process = subprocess.run(cmd, stdout=subprocess.PIPE,stderr=subprocess.PIPE)
         output = process.stdout.decode()
@@ -94,11 +94,11 @@ def vid_info(info):
             try:
                 if "RESOLUTION" not in i[2] and i[2] not in temp and "audio" not in i[2]:
                     temp.append(i[2])
-                    
+
                     # temp.update(f'{i[2]}')
                     # new_info.append((i[2], i[0]))
                     #  mp4,mkv etc ==== f"({i[1]})" 
-                    
+
                     new_info.update({f'{i[2]}':f'{i[0]}'})
 
             except:
@@ -123,7 +123,7 @@ async def run(cmd):
     if stderr:
         return f'[stderr]\n{stderr.decode()}'
 
-    
+
 
 def old_download(url, file_name, chunk_size = 1024 * 10):
     if os.path.exists(file_name):
@@ -181,7 +181,7 @@ async def download_video(url,cmd, name):
 
 
 async def send_doc(bot: Client, m: Message,cc,ka,cc1,prog,count,name):
-    reply = await m.reply_text(f"Uploading » `{name}`")
+    reply = await m.reply_text(f"**Uᴘʟᴏᴀᴅɪɴɢ** » `{name}`\n **🤖𝔹ᴏᴛ 𝕄ᴀᴅᴇ 𝔹ʏ ɧąƈƙɛཞ.**")
     time.sleep(1)
     start_time = time.time()
     await m.reply_document(ka,caption=cc1)
@@ -195,7 +195,7 @@ async def send_doc(bot: Client, m: Message,cc,ka,cc1,prog,count,name):
 async def send_vid(bot: Client, m: Message,cc,filename,thumb,name,prog):
     subprocess.run(f'ffmpeg -i "{filename}" -ss 00:01:00 -vframes 1 "{filename}.jpg"', shell=True)
     await prog.delete (True)
-    reply = await m.reply_text(f"**⥣ Uploading ...** » `{name}`")
+    reply = await m.reply_text(f"⬆️**Uᴘʟᴏᴀᴅɪɴɢ** » `{name}`\n **🤖𝔹ᴏᴛ 𝕄ᴀᴅᴇ 𝔹ʏ ɧąƈƙɛཞ.**")
     try:
         if thumb == "no":
             thumbnail = f"{filename}.jpg"
@@ -216,4 +216,3 @@ async def send_vid(bot: Client, m: Message,cc,filename,thumb,name,prog):
 
     os.remove(f"{filename}.jpg")
     await reply.delete (True)
-    
